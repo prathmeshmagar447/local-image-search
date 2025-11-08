@@ -4,6 +4,17 @@ A powerful semantic image search application using CLIP embeddings, FAISS indexi
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+**Author:** Prathmesh Magar
+
+### Features
+
+- Semantic search using CLIP embeddings
+- Fast similarity search with FAISS
+- Streamlit web UI
+- Supports multiple image formats
+- Optional LLM-based captioning
+- Offline operation after initial setup
+
 ### Steps
 
 1. **Install dependencies**
