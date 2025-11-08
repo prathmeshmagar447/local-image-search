@@ -1,4 +1,8 @@
-# Local Image Search App (CLIP + FAISS + Streamlit)
+# 🔎 Local Image Search App
+
+A powerful semantic image search application using CLIP embeddings, FAISS indexing, and Streamlit UI. Search your local image collection with natural language queries.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Steps
 
