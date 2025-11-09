@@ -1,5 +1,6 @@
 # Core
 torch>=2.0.0
+torchvision>=0.15.0
 transformers>=4.30.0
 ftfy
 tqdm
@@ -9,6 +10,7 @@ faiss-cpu
 scikit-learn
 sqlite-utils
 streamlit
-python-multipart
-opencv-python
 pandas
+pyyaml
+loguru
+requests

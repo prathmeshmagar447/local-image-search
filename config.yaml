@@ -1,0 +1,37 @@
+# Configuration for Image Search Pipeline
+
+# Processing settings
+batch_size: 64  # Larger batch for faster embedding processing
+n_workers: 4  # Will be set to max(1, os.cpu_count() - 1) if not specified
+thumbnail_size: 256  # Smaller thumbnails for faster processing (trade-off with accuracy)
+
+# LLM settings
+use_llm: true  # Set to true for captions/tags, false for faster processing
+llm_model: "llava"  # or "moondream", "bakllava", etc.
+llm_timeout: 300
+llm_max_concurrent: 3  # For parallel caption requests
+
+# Embedding settings
+clip_model: "openai/clip-vit-large-patch14"  # Upgraded to larger model for better quality
+# Alternatives: "openai/clip-vit-base-patch32", "openai/clip-vit-base-patch16"
+# For fine-tuned model, set to: "finetuned_clip"
+device: "auto"  # auto, cuda, cpu
+clip_use_fast: true  # Use fast tokenizer if available
+clip_max_length: 77  # Maximum text length for CLIP
+
+# Index settings
+faiss_index_type: "flat"  # flat, ivf, hnsw
+ivf_nlist: 100  # For IVF index
+hnsw_m: 32  # HNSW: number of neighbors per layer
+hnsw_ef_construction: 200  # HNSW: build-time search parameter
+hnsw_ef_search: 128  # HNSW: search-time parameter
+
+# UI settings
+default_results: 16
+max_results: 64
+
+# Paths
+images_dir: "images"
+db_path: "metadata.db"
+faiss_path: "vectors.faiss"
+idmap_path: "id_to_filename.json"

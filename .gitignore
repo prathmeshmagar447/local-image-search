@@ -1,7 +1,13 @@
-# Generated files
+# Database and Index Files (Generated)
 metadata.db
+metadata.db.backup
 vectors.faiss
+vectors.faiss.meta.json
 id_to_filename.json
+
+# Logs
+*.log
+image_search.log
 
 # Python
 __pycache__/
@@ -9,11 +15,49 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments (NEVER commit these!)
+.env
+.venv
 env/
 venv/
-.venv/
+ENV/
+env.bak/
+venv.bak/
+# Common virtual environment names
+myenv/
+myvenv/
+pyenv/
+pyvenv/
+# Pipenv
+Pipfile.lock
+# Poetry
+poetry.lock
+.pdm.toml
+.pdm-python
+# Conda
+conda-env/
+# Pip
 pip-log.txt
 pip-delete-this-directory.txt
+
+# Testing
 .tox/
 .coverage
 .coverage.*
@@ -21,20 +65,37 @@ pip-delete-this-directory.txt
 nosetests.xml
 coverage.xml
 *.cover
-*.log
-.git
-.mypy_cache
-.pytest_cache
-.hypothesis
+.hypothesis/
+.pytest_cache/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
-
-# IDE
-.vscode/
-.idea/
 
 # Temporary files
 *.tmp
 *.temp
+*.bak
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# API keys and secrets
+.env.local
+.env.*.local
+secrets.json
+
+# Images directory - NEVER commit images to git (large binary files)
+images/
