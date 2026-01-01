@@ -7,7 +7,7 @@ thumbnail_size: 256  # Smaller thumbnails for faster processing (trade-off with 
 
 # LLM settings
 use_llm: true  # Set to true for captions/tags, false for faster processing
-llm_model: "llava"  # or "moondream", "bakllava", etc.
+llm_model: "moondream"  # or "moondream", "bakllava", etc.
 llm_timeout: 300
 llm_max_concurrent: 3  # For parallel caption requests
 
